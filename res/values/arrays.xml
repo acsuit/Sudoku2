@@ -4,6 +4,5 @@
 		<item>@string/easy_label</item>
 		<item>@string/medium_label</item>
 		<item>@string/hard_label</item>
-		<item>@string/extreme_label</item>
 	</array>
 </resources>

@@ -29,8 +29,6 @@ public class Sudoku extends Activity implements OnClickListener {
         aboutButton.setOnClickListener(this);
         View exitButton = findViewById(R.id.exit_button);
         exitButton.setOnClickListener(this);
-        View gameButton = findViewById(R.id.game_button);
-        gameButton.setOnClickListener(this);
     }
 
 	public void onClick(View v) {
@@ -44,10 +42,8 @@ public class Sudoku extends Activity implements OnClickListener {
 			break;
 		case R.id.exit_button:
 			finish();
-			break;
-		case R.id.game_button:
-			openLostGameDialog();
-		}	
+			break;	
+		}
 	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu){
@@ -81,11 +77,8 @@ public class Sudoku extends Activity implements OnClickListener {
 	}
 	private void startGame(int i){
 		Log.d(TAG, "clicked on" + i);
-	}
-	
-	private void openLostGameDialog() {
-		new AlertDialog.Builder(this)
-		.setTitle(R.string.game_title).
-		setMessage(R.string.game_text).show();
+		Intent intent = new Intent(this, Game.class);
+		intent.putExtra(Game.KEY_DIFFICULTY, i);
+		startActivity(intent);
 	}
 }

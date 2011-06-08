@@ -6,9 +6,6 @@
     <string name="new_game_label">New Game</string>
     <string name="about_label">About</string>
     <string name="exit_label">Exit</string>
-    <string name="game_label">Game</string>
-    <string name="game_title">You are not victorious!</string>
-    <string name="game_text">You just lost the game!</string>
     <string name="about_title">About Android Sudoku</string>
     <string name="about_text">\
 Sudoku is a logic=based number placement puzzle.
@@ -29,5 +26,7 @@ row, each column, and each of the 3x3 boxes
 	<string name="easy_label">Easy</string>
 	<string name="medium_label">Medium</string>
 	<string name="hard_label">Hard</string>
-	<string name="extreme_label">EXTREME!</string>
+	<string name="game_title">Game</string>
+	<string name="no_moves_label">No moves</string>
+	<string name="keypad_title">Keypad</string>
 </resources>

@@ -41,11 +41,6 @@
   					android:id="@+id/exit_button"
   					android:text="@string/exit_label" />
   			</TableRow>
-  			<TableRow>
-  				<Button
-  					android:id="@+id/game_button"
-  					android:text="@string/game_label" />
-  			</TableRow>
   		</TableLayout>		
   	</LinearLayout>
   	
